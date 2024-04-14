@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct OnlineCinemaApp: App {
+    @StateObject private var appCoordinator = AppCoordinator(path: NavigationPath())
+    
     var body: some Scene {
         WindowGroup {
-            HomeAssembler.build(data: .init(title: "Test"))
+            NavigationStack(path: $appCoordinator.path) {
+                appCoordinator.view()
+                    .navigationDestination(for: HomeCoordinator.self) { coordinator in
+                        coordinator.view()
+                    }
+                    .environmentObject(appCoordinator)
+            }
+            .navigationBarTitleDisplayMode(.inline)
+                       .background(NavigationConfiguration())
         }
     }
 }

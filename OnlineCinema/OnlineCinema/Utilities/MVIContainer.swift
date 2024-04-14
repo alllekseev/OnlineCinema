@@ -5,7 +5,7 @@
 //  Created by Лев Бондаренко on 11.03.2024.
 //
 
-import Foundation
+import SwiftUI
 import Combine
 
 final class MVIContainer<Intent, Model>: ObservableObject {

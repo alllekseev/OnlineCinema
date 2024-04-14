@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25435F922BAFE9B200898E8E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25435F912BAFE9B200898E8E /* MainView.swift */; };
+		25435F942BAFE9BA00898E8E /* MainIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25435F932BAFE9BA00898E8E /* MainIntent.swift */; };
+		25435F962BAFE9C900898E8E /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25435F952BAFE9C900898E8E /* MainModel.swift */; };
+		25435F982BAFE9DA00898E8E /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25435F972BAFE9DA00898E8E /* MainAssembler.swift */; };
+		25513ABE2BC26FF800B6320A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25513ABD2BC26FF800B6320A /* AppCoordinator.swift */; };
+		25513AC12BC3A10000B6320A /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25513AC02BC3A10000B6320A /* BottomBar.swift */; };
+		25513AC32BC3A39E00B6320A /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25513AC22BC3A39E00B6320A /* AppTheme.swift */; };
+		25513AC62BC3A42000B6320A /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25513AC52BC3A42000B6320A /* UIColorExt.swift */; };
 		255BCEF72B9EB1ED001B9489 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BCEF62B9EB1ED001B9489 /* HomeView.swift */; };
 		255BCEFA2B9EB2BD001B9489 /* MVIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BCEF92B9EB2BD001B9489 /* MVIContainer.swift */; };
 		255BCEFD2B9EB351001B9489 /* HomeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BCEFC2B9EB351001B9489 /* HomeIntent.swift */; };
@@ -44,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25435F912BAFE9B200898E8E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		25435F932BAFE9BA00898E8E /* MainIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIntent.swift; sourceTree = "<group>"; };
+		25435F952BAFE9C900898E8E /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		25435F972BAFE9DA00898E8E /* MainAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
+		25513ABD2BC26FF800B6320A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		25513AC02BC3A10000B6320A /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
+		25513AC22BC3A39E00B6320A /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		25513AC52BC3A42000B6320A /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		255BCEF62B9EB1ED001B9489 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		255BCEF92B9EB2BD001B9489 /* MVIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVIContainer.swift; sourceTree = "<group>"; };
 		255BCEFC2B9EB351001B9489 /* HomeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIntent.swift; sourceTree = "<group>"; };
@@ -91,9 +107,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25435F902BAFE99E00898E8E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25435F912BAFE9B200898E8E /* MainView.swift */,
+				25435F932BAFE9BA00898E8E /* MainIntent.swift */,
+				25435F952BAFE9C900898E8E /* MainModel.swift */,
+				25435F972BAFE9DA00898E8E /* MainAssembler.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		25513ABF2BC3A0F500B6320A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				25513AC42BC3A3FB00B6320A /* Extensions */,
+				25513AC02BC3A10000B6320A /* BottomBar.swift */,
+				25513AC22BC3A39E00B6320A /* AppTheme.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		25513AC42BC3A3FB00B6320A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25513AC52BC3A42000B6320A /* UIColorExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		255BCEF32B9EB1B6001B9489 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				25435F902BAFE99E00898E8E /* Main */,
 				255BCEF52B9EB1E2001B9489 /* Home */,
 			);
 			path = Modules;
@@ -103,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				6A0587892BA4254D009F16F0 /* OnlineCinemaApp.swift */,
+				25513ABD2BC26FF800B6320A /* AppCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -149,6 +196,7 @@
 		25AEF4A22B9973DD000CDA57 /* OnlineCinema */ = {
 			isa = PBXGroup;
 			children = (
+				25513ABF2BC3A0F500B6320A /* Common */,
 				255BCEF82B9EB2A4001B9489 /* Utilities */,
 				255BCEF42B9EB1CD001B9489 /* App */,
 				255BCEF32B9EB1B6001B9489 /* Modules */,
@@ -405,11 +453,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A8FD5702B9F0C4800715033 /* Configuration.swift in Sources */,
+				25435F982BAFE9DA00898E8E /* MainAssembler.swift in Sources */,
+				25513AC32BC3A39E00B6320A /* AppTheme.swift in Sources */,
+				25513AC12BC3A10000B6320A /* BottomBar.swift in Sources */,
+				25513ABE2BC26FF800B6320A /* AppCoordinator.swift in Sources */,
+				25435F922BAFE9B200898E8E /* MainView.swift in Sources */,
 				6A8FD5732B9F0CC500715033 /* ApplicationLevelAssembly.swift in Sources */,
 				6A8FD56D2B9F0A6600715033 /* Container.swift in Sources */,
+				25435F942BAFE9BA00898E8E /* MainIntent.swift in Sources */,
 				6A8FD56C2B9F0A6600715033 /* Assembly.swift in Sources */,
 				6A8FD56E2B9F0A6600715033 /* Injectable.swift in Sources */,
 				6A8FD5752B9F0E7500715033 /* AplicationConfigurator.swift in Sources */,
+				25435F962BAFE9C900898E8E /* MainModel.swift in Sources */,
+				25513AC62BC3A42000B6320A /* UIColorExt.swift in Sources */,
 				6A05878A2BA4254E009F16F0 /* OnlineCinemaApp.swift in Sources */,
 				255BCF012B9EB609001B9489 /* HomeAssembler.swift in Sources */,
 				255BCEF72B9EB1ED001B9489 /* HomeView.swift in Sources */,
